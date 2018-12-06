@@ -12,13 +12,15 @@ class ResultadosController extends Controller
         return [
             [
                 'codigo' => '12',
-                'nome' => 'ALalalal',
-                'receita' => 1254
+                'nome' => 'Produto 12',
+                'receita' => 599.99,
+                'quantidade' => 30
             ],
             [
-                'codigo' => '12',
-                'nome' => 'ALalalal',
-                'receita' => 1254
+                'codigo' => '13',
+                'nome' => 'Produto 13',
+                'receita' => 199.99,
+                'quantidade' => 45
             ]
         ];
     }
