@@ -35,21 +35,22 @@ class ResultadosController extends Controller
             'status' => true,
             'lista' => [
                 [
-                    'nome' => 'Instalação',
-                    'horas' => '28',
-                    'receita' => '3080'
+                    'nome' => 'Treinamentos',
+                    'horas' => '300',
+                    'receita' => '33000'
+                    
                 ],
                 [
                     'nome' => 'Consultoria',
                     'horas' => '100',
                     'receita' => '11000'
                 ],
-                [
-                    'nome' => 'Treinamentos',
-                    'horas' => '300',
-                    'receita' => '33000'
-                ],
                 
+                [
+                    'nome' => 'Instalação',
+                    'horas' => '28',
+                    'receita' => '3080'
+                ],
             ]
         ];
     }
@@ -60,14 +61,9 @@ class ResultadosController extends Controller
             'status' => true,
             'lista' => [
                 [
-                    'nome' => 'ABTM',
-                    'horas' => '60',
-                    'receita' => '6600'
-                ],
-                [
-                    'nome' => 'Real Guindastes',
-                    'horas' => '45',
-                    'receita' => '4950'
+                    'nome' => 'Lab. Geraldo Lustosa',
+                    'horas' => '100',
+                    'receita' => '16500'
                 ],
                 [
                     'nome' => 'KNBS',
@@ -85,10 +81,16 @@ class ResultadosController extends Controller
                     'receita' => '6820'
                 ],
                 [
-                    'nome' => 'Lab. Geraldo Lustosa',
-                    'horas' => '100',
-                    'receita' => '16500'
+                    'nome' => 'ABTM',
+                    'horas' => '60',
+                    'receita' => '6600'
                 ],
+                [
+                    'nome' => 'Real Guindastes',
+                    'horas' => '45',
+                    'receita' => '4950'
+                ],
+                
             ]
         ];
     }
