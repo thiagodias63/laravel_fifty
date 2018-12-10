@@ -42,6 +42,8 @@ class User extends Authenticatable
         if ( $this->name == 'thiago.dias' || $this->name == 'senior') {
             if ($this->password == 'testeteste') {
                 return true;
+            } else {
+                return false;
             }
         } else {
             return false;
