@@ -13,8 +13,10 @@ class UserController extends Controller
         $user = new User;
         $user->name = $data['name'];
         $user->password = $data['password'];
+        
         $response = $user->login();
-        return [ 'status' => ($response->pmLogged == 0) ? true : false];
+
+        return [ 'status' => $response];
     }
     
 }
