@@ -20,11 +20,12 @@ Route::get('/ordem/completadas', 'OrdemController@completadas');
 Route::get('/ordem/pendentes', 'OrdemController@pendetes');
 Route::put('/ordem/{id}', 'OrdemController@finalizar');
 
-Route::get('/produtos', 'ResultadosController@getProdutos');
+// Route::get('/produtos', 'ResultadosController@getProdutos');
 Route::get('/servicos', 'ResultadosController@getServicos');
 Route::get('/clientes', 'ResultadosController@getClientes');
-Route::get('/mensal', 'ResultadosController@getMensal');
-
+// Route::get('/mensal', 'ResultadosController@getMensal');
+/*
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+*/

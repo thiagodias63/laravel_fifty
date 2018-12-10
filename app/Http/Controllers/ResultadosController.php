@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class ResultadosController extends Controller
 {
+    /*
     public function getProdutos()
     {
         return [
@@ -27,10 +28,30 @@ class ResultadosController extends Controller
             ]
         ];
     }
-    
+    */
     public function getServicos()
     {
-        return [];
+        return [
+            'status' => true,
+            'lista' => [
+                [
+                    'nome' => 'Instalação',
+                    'horas' => '28',
+                    'receita' => '3080'
+                ],
+                [
+                    'nome' => 'Consultoria',
+                    'horas' => '100',
+                    'receita' => '11000'
+                ],
+                [
+                    'nome' => 'Treinamentos',
+                    'horas' => '300',
+                    'receita' => '33000'
+                ],
+                
+            ]
+        ];
     }
 
     public function getClientes()
@@ -40,58 +61,38 @@ class ResultadosController extends Controller
             'lista' => [
                 [
                     'nome' => 'ABTM',
-                    'atendimentos' => '100',
-                    'receita' => '150'
+                    'horas' => '60',
+                    'receita' => '6600'
                 ],
                 [
                     'nome' => 'Real Guindastes',
-                    'atendimentos' => '100',
-                    'receita' => '150'
+                    'horas' => '45',
+                    'receita' => '4950'
                 ],
                 [
                     'nome' => 'KNBS',
-                    'atendimentos' => '100',
-                    'receita' => '150'
+                    'horas' => '90',
+                    'receita' => '9900'
                 ],
                 [
                     'nome' => 'Kutner',
-                    'atendimentos' => '100',
-                    'receita' => '150'
+                    'horas' => '71',
+                    'receita' => '7810'
                 ],
                 [
                     'nome' => 'Paul Wurth',
-                    'atendimentos' => '100',
-                    'receita' => '150'
+                    'horas' => '62',
+                    'receita' => '6820'
                 ],
                 [
                     'nome' => 'Lab. Geraldo Lustosa',
-                    'atendimentos' => '100',
-                    'receita' => '150'
-                ],
-                [
-                    'nome' => 'Unimed',
-                    'atendimentos' => '100',
-                    'receita' => '150'
-                ],
-                [
-                    'nome' => 'STC Contabilidade',
-                    'atendimentos' => '100',
-                    'receita' => '150'
-                ],
-                [
-                    'nome' => 'Gestão Contabil S.A',
-                    'atendimentos' => '100',
-                    'receita' => '150'
-                ],
-                [
-                    'nome' => 'AP Ponto',
-                    'atendimentos' => '100',
-                    'receita' => '150'
+                    'horas' => '100',
+                    'receita' => '16500'
                 ],
             ]
         ];
     }
-
+    /*
     public function getMensal()
     {
         return [
@@ -103,4 +104,5 @@ class ResultadosController extends Controller
             ]
         ];
     }
+    */
 }
