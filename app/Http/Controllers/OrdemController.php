@@ -67,14 +67,14 @@ class OrdemController extends Controller
         ];
         $this->ordens[] = $ordem;
 
-        return [ 'status' => true, 'ordens' => $this->ordens ];
+        return [ 'status' => true, 'lista' => $this->ordens ];
     }
     
     public function finalizar($id)
     {
         // $data = $request->all();
         $this->ordens[$id]['completada'] = true;
-        return [ 'status' => true, 'ordens' => $this->ordens ];
+        return [ 'status' => true, 'lista' => $this->ordens ];
     }
 
     public function completadas()
