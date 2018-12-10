@@ -36,56 +36,59 @@ class ResultadosController extends Controller
     public function getClientes()
     {
         return [
-            [
-                'nome' => 'ABTM',
-                'atendimentos' => '100',
-                'receita' => '150'
-            ],
-            [
-                'nome' => 'Real Guindastes',
-                'atendimentos' => '100',
-                'receita' => '150'
-            ],
-            [
-                'nome' => 'KNBS',
-                'atendimentos' => '100',
-                'receita' => '150'
-            ],
-            [
-                'nome' => 'Kutner',
-                'atendimentos' => '100',
-                'receita' => '150'
-            ],
-            [
-                'nome' => 'Paul Wurth',
-                'atendimentos' => '100',
-                'receita' => '150'
-            ],
-            [
-                'nome' => 'Lab. Geraldo Lustosa',
-                'atendimentos' => '100',
-                'receita' => '150'
-            ],
-            [
-                'nome' => 'Unimed',
-                'atendimentos' => '100',
-                'receita' => '150'
-            ],
-            [
-                'nome' => 'STC Contabilidade',
-                'atendimentos' => '100',
-                'receita' => '150'
-            ],
-            [
-                'nome' => 'Gestão Contabil S.A',
-                'atendimentos' => '100',
-                'receita' => '150'
-            ],
-            [
-                'nome' => 'AP Ponto',
-                'atendimentos' => '100',
-                'receita' => '150'
-            ],
+            'status' => true,
+            'lista' => [
+                [
+                    'nome' => 'ABTM',
+                    'atendimentos' => '100',
+                    'receita' => '150'
+                ],
+                [
+                    'nome' => 'Real Guindastes',
+                    'atendimentos' => '100',
+                    'receita' => '150'
+                ],
+                [
+                    'nome' => 'KNBS',
+                    'atendimentos' => '100',
+                    'receita' => '150'
+                ],
+                [
+                    'nome' => 'Kutner',
+                    'atendimentos' => '100',
+                    'receita' => '150'
+                ],
+                [
+                    'nome' => 'Paul Wurth',
+                    'atendimentos' => '100',
+                    'receita' => '150'
+                ],
+                [
+                    'nome' => 'Lab. Geraldo Lustosa',
+                    'atendimentos' => '100',
+                    'receita' => '150'
+                ],
+                [
+                    'nome' => 'Unimed',
+                    'atendimentos' => '100',
+                    'receita' => '150'
+                ],
+                [
+                    'nome' => 'STC Contabilidade',
+                    'atendimentos' => '100',
+                    'receita' => '150'
+                ],
+                [
+                    'nome' => 'Gestão Contabil S.A',
+                    'atendimentos' => '100',
+                    'receita' => '150'
+                ],
+                [
+                    'nome' => 'AP Ponto',
+                    'atendimentos' => '100',
+                    'receita' => '150'
+                ],
+            ]
         ];
     }
 
