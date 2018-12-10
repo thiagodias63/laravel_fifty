@@ -40,7 +40,7 @@ class User extends Authenticatable
         return $soap->executar('AuthenticateJAAS', $parametrosSoap);
         */
         if ( $this->name == 'thiago.dias' || $this->name == 'senior') {
-            if ($this->password == 'testeteste') {
+            if ($this->password == 'senior') {
                 return true;
             } else {
                 return false;

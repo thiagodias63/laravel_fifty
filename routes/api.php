@@ -14,6 +14,13 @@ use Illuminate\Http\Request;
 */
 Route::post('/login', 'UserController@login');
 
+Route::post('/ordem', 'OrdemController@cadastrar');
+Route::get('/ordem', 'OrdemController@listar');
+/*
+Route::get('/ordem/aprovadas', 'OrdemController@aprovadas');
+Route::get('/ordem/pendentes', 'OrdemController@pendetes');
+Route::put('/ordem', 'OrdemController@aprovar');
+*/
 Route::get('/produtos', 'ResultadosController@getProdutos');
 Route::get('/servicos', 'ResultadosController@getServicos');
 Route::get('/clientes', 'ResultadosController@getClientes');
