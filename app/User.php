@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\ClienteSoap;
 
 class User extends Authenticatable
 {
@@ -26,4 +27,15 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function login () 
+    {
+        $parametrosSoap = [
+            'pmUserName' => $this->name,
+            'pmUserPassword' => $this->password,
+            'pmEncrypted' => '0',
+        ];
+        $soap = new ClienteSoap('http://189.17.26.241:8080/g5-senior-services/sapiens_SyncMCWFUsers');
+        return $soap->executar('AuthenticateJAAS', $parametrosSoap);
+    }
 }
