@@ -16,11 +16,10 @@ Route::post('/login', 'UserController@login');
 
 Route::post('/ordem', 'OrdemController@cadastrar');
 Route::get('/ordem', 'OrdemController@listar');
-/*
-Route::get('/ordem/aprovadas', 'OrdemController@aprovadas');
+Route::get('/ordem/completadas', 'OrdemController@completadas');
 Route::get('/ordem/pendentes', 'OrdemController@pendetes');
-Route::put('/ordem', 'OrdemController@aprovar');
-*/
+Route::put('/ordem/{id}', 'OrdemController@finalizar');
+
 Route::get('/produtos', 'ResultadosController@getProdutos');
 Route::get('/servicos', 'ResultadosController@getServicos');
 Route::get('/clientes', 'ResultadosController@getClientes');
